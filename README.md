@@ -1,6 +1,6 @@
 **Introduction**
 
-This report outlines my iterative journey in enhancing a generic genetic programming (GP) implementation for symbolic regression. Starting with a baseline approach featuring random mutation, subtree crossover, and tournament selection, I identified and addressed several challenges, including tree bloat and fitness stagnation, through systematic modifications and strategy refinements.
+Starting with a baseline approach featuring random mutation, subtree crossover, and tournament selection, I identified and addressed several challenges, including tree bloat and fitness stagnation, through systematic modifications and strategy refinements.
 
 ---
 
