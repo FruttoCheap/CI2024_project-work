@@ -26,7 +26,7 @@ def mutate(individual: Node, max_depth: int, mutation_rate: float, n_variables: 
     if mutation_type == "shrink":
         return apply_shrink_mutation(individual, mutate_node, n_variables)
     elif mutation_type == "subtree_replacement" and max_depth - mutate_node.depth > 1:
-        new_subtree = generate_random_tree(max_depth, n_variables, mutate_node.depth)
+        new_subtree = generate_random_tree(max_depth - mutate_node.depth, n_variables, mutate_node.depth)
         replace(individual, mutate_node, new_subtree)
     elif mutation_type == "hoist":
         return apply_hoist_mutation(individual, mutate_node)
